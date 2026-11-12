@@ -15,3 +15,11 @@ Full source code available on purchase.
 - Bundle integrity: verified
 - Full code: available on purchase (private repo + ZIP)
 - Last verified: 2026-11-12
+
+## Test suite
+
+10 smoke tests (no liboqs required):
+
+    pytest tests/ -v
+
+All 10 pass. Tests verify: ML-DSA-65 signature size (3309 bytes), Merkle inclusion proofs, anchor integrity, PII safety.
